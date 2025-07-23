@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Pokemones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <header class="p-3 mb-3 border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+          <img class="bi me-2" width="70" height="52" src="assets/poke.png">
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="Objetos.html" class="nav-link px-2 link-dark">Objetos</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Ver Rutas</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark"></a></li>
+        </ul>
+
+
+    
+
+ <div class="dropdown text-end">
+    <a href="" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+      <img src="assets/pngwing.com.png" alt="mdo" width="32" height="32" class="rounded-circle">
+    </a>
+   <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+    <span class="dropdown-item">Hola, <strong>{{username}}</strong></span>
+    <li><a class="dropdown-item" href="#">Historial</a></li>
+    <li><a class="dropdown-item" href="#">Ajustes</a></li>
+    <li><a class="dropdown-item" href="#">Perfil</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Cerrar secion</a></li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</header>
+
+<br><br><br><br>
+    <div class="container my-4">
+        <label for="selector-region" class="form-label">Selecciona una región</label>
+        <select id="selector-region" class="form-select mb-3">
+            <option value="">-- Elige una región --</option>
+            <option value="kanto">Kanto</option>
+            <option value="johto">Johto</option>
+            <option value="hoenn">Hoenn</option>
+            <option value="sinnoh">Sinnoh</option>
+            <option value="unova">Unova</option>
+            <option value="kalos">Kalos</option>
+            <option value="alola">Alola</option>
+            <option value="galar">Galar</option>
+            <option value="paldea">Paldea</option>
+        </select>
+        <div id="rutas-container" class="row row-cols-1 row-cols-md-2 g-4"></div>
+    </div>
+<br><br><br><br><br><br><br><br><br>
+
+
+
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container d-flex justify-content-between align-items-start">
+        <div>
+            <h5>Buscador Pokemon</h5>
+            <p>&copy;Todos los derechos reservados.</p>
+            <div>
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div>
+            <h5>Juegos</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://store.nintendo.es/es/pokemon" class="text-white">Nintendo</a></li>
+                <li><a href="#" class="text-white"></a></li>
+                <li><a href="#" class="text-white"></a></li>
+                <li><a href="#" class="text-white"></a></li>
+            </ul>
+        </div>
+        <div>
+            <h5>Comunidades</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://www.wikidex.net/wiki/WikiDex" class="text-white">WikiDex</a></li>
+                <li><a href="#" class="text-white"></a></li>
+                <li><a href="#" class="text-white"></a></li>
+                <li><a href="#" class="text-white"></a></li>
+            </ul>
+        </div>
+        <div>
+            <h5>Enlaces útiles</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://pokeapi.co/" class="text-white">Pokémon API</a></li>
+                <li><a href="https://corporate.pokemon.com/en-us/" class="text-white">The Pokémon Company</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="scripts/rutas.js" defer></script>
+
+    
+</body>
+</html>

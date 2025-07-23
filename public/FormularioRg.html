@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/formulario.css">
+  <title>Registro de Buscador Pokemon</title>
+</head>
+<style>
+    body {
+  background-image: url(assets/410373.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+</style>
+<body>
+ <div class="container">
+    <h2>Registrarse</h2>
+    <form id="FormularioRegistro" method="POST" action="/register">
+        <div class="form-group">
+            <label for="Nombre">Nombre de Usuario:</label>
+            <input type="text" id="Nombre" name="username" required>
+            <div id="nameError" class="error-message" style="display:none;"></div> 
+        </div>
+        <div class="form-group">
+            <label for="Correo">Correo:</label>
+            <input type="email" id="Correo" name="email" placeholder="Ejemplo@gmail.com" required>
+            <div id="emailError" class="error-message" style="display:none;"></div> 
+        </div>
+        <div class="form-group">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <div id="passwordError" class="error-message" style="display:none;"></div> 
+        </div>
+        <div class="form-group">
+            <label for="cpassword">Confirmar Contraseña:</label>
+            <input type="password" id="cpassword" name="confirm" required>
+            <div id="cpasswordError" class="error-message" style="display:none;"></div> 
+        </div>
+        <button type="submit">Registrarme</button>
+    </form>
+</div>
+
+  <script src="scripts/formularioRg.js" defer></script>
+</body>
+</html>
+
